@@ -7,7 +7,7 @@ const io = new Server(httpServer)
 
 app.use
 
-const { PORT = 5000 } = process.env
+const { PORT = 10000 } = process.env
 
 io.on('connection', (socket) => {
   socket.on('chatMessage', (message) => {
